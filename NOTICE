@@ -1,0 +1,41 @@
+Codex Quota Android
+Copyright 2026 Luxiyu
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+This is an independent project and is not affiliated with OpenAI.
+
+Third-party software distributed in the APK
+===========================================
+
+OpenAI Codex 0.159.2 (aarch64-unknown-linux-musl)
+Copyright 2025 OpenAI
+License: Apache-2.0
+Source: https://github.com/openai/codex
+Package: https://registry.npmjs.org/@openai/codex/-/codex-0.159.2-linux-arm64.tgz
+Binary SHA-256: 113aa5d5952a6fd3950a88323219747d0c91978ebee948509a540c8a460e59a3
+Full license: assets/codex-LICENSE.txt in the APK.
+The source repository and source archive omit this binary; the download
+script retrieves the pinned upstream package and verifies its integrity.
+The upstream executable is copied without modification and packaged as
+libcodex.so so Android can install it in the native library directory.
+
+AndroidX (Activity, Core, Lifecycle, Compose, WorkManager and dependencies)
+Copyright The Android Open Source Project and respective contributors
+License: Apache-2.0
+Source: https://android.googlesource.com/platform/frameworks/support/
+License: https://www.apache.org/licenses/LICENSE-2.0
+
+Kotlin standard library and kotlinx.coroutines
+Copyright JetBrains s.r.o. and respective contributors
+License: Apache-2.0
+Sources: https://github.com/JetBrains/kotlin
+         https://github.com/Kotlin/kotlinx.coroutines
+License: https://www.apache.org/licenses/LICENSE-2.0
+
+Build and test tooling (not application account data)
+====================================================
+Gradle Wrapper: Apache-2.0, https://github.com/gradle/gradle
+JUnit 4: EPL-1.0, https://github.com/junit-team/junit4
+JSON-java (test dependency): public domain,
+https://github.com/stleary/JSON-java
+Build tooling and dependency licenses remain with their respective owners.

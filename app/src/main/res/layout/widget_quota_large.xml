@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_card_background"
+    android:clipToOutline="true"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="Codex 额度"
+            android:textColor="#F0F3F1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/widget_refresh"
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:contentDescription="刷新额度"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="↻"
+            android:textColor="#A8B5AC"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="5小时"
+                android:textColor="#F0F3F1"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/widget_primary_value"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="42sp"
+                android:autoSizeMinTextSize="24sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="—"
+                android:textColor="#46EC70"
+                android:textSize="42sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/widget_primary_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="恢复时间 —"
+                android:textColor="#A8B5AC"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/widget_primary_bar"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginTop="6dp"
+                android:contentDescription="5小时剩余额度"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="周额度"
+                android:textColor="#F0F3F1"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/widget_secondary_value"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="42sp"
+                android:autoSizeMinTextSize="24sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="—"
+                android:textColor="#46EC70"
+                android:textSize="42sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/widget_secondary_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="恢复时间 —"
+                android:textColor="#A8B5AC"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/widget_secondary_bar"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginTop="6dp"
+                android:contentDescription="周剩余额度"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
